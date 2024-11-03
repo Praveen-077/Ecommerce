@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import Cart from "./features/cart/Cart";
+import CheckOutPage from "./pages/CheckOutPage";
 
 //  ********* Routing
 import { createRoot } from "react-dom/client";
@@ -14,6 +15,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <Cart></Cart>,
+  },
+  {
+    path: "/checkout",
+    element: <CheckOutPage></CheckOutPage>,
+  },
+  {
+    path: "/product-detail",
+    element:<ProductDetailPage></ProductDetailPage>,
   },
 ]);
 
